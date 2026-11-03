@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+            <nav aria-label="Main navigation">
+                <a class="brand" href="#home">PORTFOLIO</a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero-copy">
+                <p class="eyebrow">Software Developer</p>
+                <h1>Hello, I'm <span>Your Name</span></h1>
+                <p class="hero-description">I build useful, responsive web experiences.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container narrow">
+                <p class="eyebrow">A little introduction</p>
+                <h2>About Me</h2>
+                <p class="section-copy">I'm a developer who enjoys learning new technologies and turning ideas into practical applications. This starter portfolio is ready for your own biography and details.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <p class="eyebrow">What I work with</p>
+                <h2>Skills</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <span class="card-index">01</span>
+                        <h3>Programming</h3>
+                        <p>Add your languages and programming strengths here.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-index">02</span>
+                        <h3>Web Development</h3>
+                        <p>Add the frameworks and tools you use here.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-index">03</span>
+                        <h3>Problem Solving</h3>
+                        <p>Describe the kind of problems you like to solve.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <p class="eyebrow">Selected work</p>
+                <h2>Projects</h2>
+                <article class="project-card">
+                    <div class="project-art" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="project-copy">
+                        <h3>Project Name</h3>
+                        <p>Replace this text with a short description of a project, its purpose, and what you built.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container narrow">
+                <p class="eyebrow">Get in touch</p>
+                <h2>Let's Connect</h2>
+                <p class="section-copy">Add a public contact method here when you're ready to share it.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="year"></span> Developer Portfolio</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
